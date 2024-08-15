@@ -21,7 +21,9 @@ function deleteTask(index) {
   toDOListArray.value.splice(index, 1);
 }
 onMounted(()=>{
-  toDOListArray.value = JSON.parse(localStorage.getItem('toDOList'))
+  let rr = JSON.parse(localStorage.getItem('toDOList'))
+  if(rr)
+  toDOListArray.value = rr
 })
 watch(toDOListArray, () => {
   localStorage.setItem('toDOList' ,JSON.stringify(toDOListArray.value))
