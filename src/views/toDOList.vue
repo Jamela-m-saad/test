@@ -33,7 +33,7 @@ watch(toDOListArray, () => {
 </script>
 
 <template>
-  <Card className="sm:bg-[#a6b9f7] w-2/4 mx-auto rounded-xl mt-6 p-20">
+  <Card className="sm:bg-red-300 w-2/4 mx-auto rounded-xl mt-6 p-20">
     <div class="grid grid-cols-12">
       <div class="col-span-10 my-auto">
         <Textinput
